@@ -1,0 +1,42 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+}
+
+/*头部样式*/
+header {
+    width: 100%;
+}
+
+header .head_top {
+    background: #eee;
+    height: 30px;
+    width: 100%;
+    /*border-bottom: 1px solid #ddd;*/
+    outline: 1px solid #ddd;
+}
+
+header .head_top div {
+    width: 1600px;
+    height: 30px;
+    margin: 0 auto;
+}
+
+header .head_top ul {
+    height: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #f00;
+}
+ul>.lt{
+    float: left;
+}
+ul>.rt{
+    float: right;
+}
+header .head_top ul li {
+    height: 30px;
+    float: left;
+}
