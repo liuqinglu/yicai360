@@ -21,7 +21,7 @@ header {
 }
 
 /*头部的登录、搜索、导航 宽度*/
-.w {
+.w1200 {
     margin: auto;
     width: 1200px;
 }
@@ -59,7 +59,7 @@ ul > li {
     height: 100px;
 }
 
-.h {
+.h100 {
     width: 1200px;
     height: 100px;
     margin: 0 auto;
@@ -80,7 +80,7 @@ ul > li {
     z-index: 9;
     background: url(../img/logo.png) no-repeat;
 }
-
+/*搜索框样式*/
 .search_box {
     position: absolute;
     left: 300px;
@@ -95,7 +95,7 @@ ul > li {
     border: 2px solid #f00;
     padding: 0 10px;
 }
-
+/*搜索按钮样式*/
 .search_box a {
     display: block;
     width: 100px;
@@ -128,7 +128,13 @@ ul > li {
     border: 2px solid #f30;
     margin-left: 20px;
 }
-
+/*固定头部*/
+.fixedTop {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(200,200,200,.3);
+}
 /*Tab导航*/
 .topTabBox {
     height: 30px;

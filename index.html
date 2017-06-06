@@ -10,7 +10,7 @@
 <header>
     <!--顶部导航-->
     <nav class="topNav">
-        <div class="w">
+        <div class="w1200">
             <ul class="lt">
                 <li>您好，欢迎光临材易采商城</li>
                 <li><a href="#">请登录</a></li>
@@ -31,16 +31,19 @@
             </ul>
         </div>
     </nav>
-    <!--logo_search-->
+    <!--logo、搜索、询价部分-->
     <div class="logo_search">
-        <div class="w h">
+        <div class="w1200 h100">
+            <!--logo-->
             <div class="logo">
                 <a href="#"></a>
             </div>
+            <!--搜索框-->
             <div class="search_box">
                 <input type="text" placeholder="请输入关键字">
                 <a href="#">搜索</a>
             </div>
+            <!--询价-->
             <div class="enquiry">
                 <a href="#">发布询价单</a>
                 <a href="#">一键询价</a>
@@ -48,7 +51,7 @@
         </div>
     </div>
     <!--Tab导航栏-->
-    <nav class="topTabBox w">nav</nav>
+    <nav class="topTabBox w1200">nav</nav>
 </header>
 <!--主要内容-->
 <div class="content">
@@ -58,7 +61,21 @@
 <footer>底部</footer>
 <script src="js/jquery-3.2.1.min.js"></script>
 <script>
+    $(function () {
+        var searchObj = $(".logo_search"); //得到搜索栏对象
+        var win = $(window); //得到窗口对象
+        var doc = $(document);//得到document文档对象
+        win.scroll(function () {
+            if (doc.scrollTop() >= 60) {
+                searchObj.addClass("fixedTop");
+//                $(".navTmp").fadeIn();
+            } else {
+                searchObj.removeClass("fixedTop");
+//                $(".navTmp").fadeOut();
+            }
 
+        })
+    });
 </script>
 </body>
 </html>
