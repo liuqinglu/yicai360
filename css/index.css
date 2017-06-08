@@ -2,7 +2,7 @@ html, body, ul {
     margin: 0;
     padding: 0;
     color: #333;
-    font-size: 14px;
+    font-size: 12px;
     list-style: none;
 }
 
@@ -15,18 +15,18 @@ a:hover {
     color: #f30;
 }
 
-/*头部样式*/
+/******************************页面头部******************************/
 header {
     width: 100%;
 }
 
-/*头部的登录、搜索、导航 宽度*/
+/*头部的登录注册、搜索、导航的宽度为1200px像素*/
 .w1200 {
     margin: auto;
     width: 1200px;
 }
 
-/*顶部灰色背景部分*/
+/*****************顶部灰色背景部分*****************/
 .topNav {
     width: 100%;
     height: 30px;
@@ -40,10 +40,12 @@ ul {
     line-height: 30px;
 }
 
+/*左侧 登录注册*/
 ul.lt {
     float: left;
 }
 
+/*右侧 帮助中心*/
 ul.rt {
     float: right;
 }
@@ -53,21 +55,27 @@ ul > li {
     padding: 0 5px;
 }
 
-/*logo和搜索框部分*/
+/*****************logo和搜索框部分*****************/
 .logo_search {
     width: 100%;
     height: 100px;
+    background: #fff;
 }
 
 .h100 {
-    width: 1200px;
     height: 100px;
-    margin: 0 auto;
     position: relative;
-    zoom: 1;
 }
 
 /*logo*/
+.logo {
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 .logo > a {
     position: absolute;
     left: 0;
@@ -80,11 +88,15 @@ ul > li {
     z-index: 9;
     background: url(../img/logo.png) no-repeat;
 }
+
 /*搜索框样式*/
 .search_box {
+    width: 624px;
+    height: 100px;
+    line-height: 100px;
     position: absolute;
     left: 300px;
-    top: 30px;
+    top: 0;
     z-index: 70;
 }
 
@@ -95,58 +107,140 @@ ul > li {
     border: 2px solid #f00;
     padding: 0 10px;
 }
-/*搜索按钮样式*/
-.search_box a {
-    display: block;
+
+/*搜索按钮*/
+.search_btn {
+    display: inline-block;
     width: 100px;
     height: 44px;
     line-height: 44px;
+    font-size: 18px;
     text-align: center;
     color: #fff;
     background: #f00;
-    text-decoration: none;
     position: absolute;
-    left: 524px;
-    top: 0;
+    top: 29px;
 }
 
-/*询价*/
+/*询价按钮*/
 .enquiry {
+    height: 100px;
+    line-height: 104px;
     position: absolute;
     right: 0;
-    top: 30px;
 }
 
-.enquiry a {
-    color: #f30;
+.enquiry > .a_btn {
+    color: #c00;
     background: #eee;
     text-align: center;
     display: inline-block;
-    width: 100px;
+    width: 110px;
     height: 40px;
     line-height: 40px;
-    border: 2px solid #f30;
-    margin-left: 20px;
+    border: 2px solid #c30;
+    margin-left: 10px;
+    font-size: 1.5rem;
 }
+
 /*固定头部*/
 .fixedTop {
     position: fixed;
-    left: 0;
     top: 0;
-    background-color: rgba(200,200,200,.3);
-}
-/*Tab导航*/
-.topTabBox {
-    height: 30px;
-    background: #cc6;
+    height: 75px;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
 }
 
-/*中间主体内容*/
+/*****************Tab导航栏*****************/
+.topTabBox {
+    width: 100%;
+    height: 40px;
+}
+
+.topTab {
+    height: 40px;
+    line-height: 40px;
+}
+
+.navitm-cats {
+    float: left;
+    height: 40px;
+    width: 160px;
+    background: #151515;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    padding-left: 0;
+    overflow: visible;
+}
+
+/****************************************************************************/
+
+.navitm-cats .toplevel {
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    width: 160px;
+    text-align: left;
+    border-bottom: 2px solid #151515;
+}
+
+.navitm-cats .lineicon {
+    display: inline-block;
+    margin: 0 15px 0 27px;
+    width: 15px;
+    height: 12px;
+    overflow: hidden;
+}
+
+.navitm-cats .lineicon i {
+    width: 15px;
+    height: 0;
+    border-top: 2px solid #ddd;
+    display: block;
+    margin-bottom: 3px;
+}
+
+/******************************************************************************/
+
+/***********右侧导航列表**********/
+.funcTab {
+    position: relative;
+    z-index: 72;
+    height: 40px;
+    float: left;
+    padding-left: 20px;
+}
+
+.funcTab li {
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    padding: 0 33px;
+}
+
+.funcTab li a {
+    color: #333;
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.funcTab li a:hover {
+    text-decoration: none;
+    color: #E31436;
+}
+
+/******************************主体内容******************************/
 div.content {
     height: 1000px;
+    background: #cef;
 }
 
-/*底部*/
+/******************************页面底部******************************/
 footer {
     height: 200px;
     background: #333;
