@@ -175,15 +175,12 @@ ul > li {
     overflow: visible;
 }
 
-/****************************************************************************/
-
 .navitm-cats .toplevel {
     display: inline-block;
     height: 40px;
     line-height: 40px;
     width: 160px;
     text-align: left;
-    border-bottom: 2px solid #151515;
 }
 
 .navitm-cats .lineicon {
@@ -201,6 +198,23 @@ ul > li {
     display: block;
     margin-bottom: 3px;
 }
+
+/*************************************左侧 商品分类 导航***************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /******************************************************************************/
 
