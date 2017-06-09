@@ -152,10 +152,11 @@ ul > li {
     box-shadow: 0 0 10px rgba(0, 0, 0, .2);
 }
 
-/*****************Tab导航栏*****************/
+/*****************分类导航 + Tab导航栏*****************/
 .topTabBox {
     width: 100%;
     height: 40px;
+    border-bottom: 2px solid #333;
 }
 
 .topTab {
