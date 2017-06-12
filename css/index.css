@@ -2,7 +2,7 @@ html, body, ul {
     margin: 0;
     padding: 0;
     color: #333;
-    font-size: 14px;
+    font-size: 12px;
     list-style: none;
 }
 
@@ -219,7 +219,7 @@ ul.rt > li {
     margin-bottom: 3px;
 }
 
-/*************************************左侧 商品分类 导航***************************************/
+/******************************左侧 商品分类 导航*********************************/
 
 /******************************************************************************/
 
@@ -253,15 +253,45 @@ ul.rt > li {
     color: #E31436;
 }
 
-/******************************主体内容******************************/
-div.container {
-    height: 1000px;
-    background: #eee;
-}
-
 /******************************页面底部******************************/
+
 footer {
     background: #000;
+}
+
+.foot_a {
+    background: #ddd;
+}
+
+.h120 {
+    height: 120px;
+    color: #ff0;
+}
+
+.foot_a li {
+    float: left;
+    height: 80px;
+    width: 300px;
+    color: #000;
+    position: relative;
+}
+
+.foot_a li img {
+    position: absolute;
+    top: 30px;
+}
+
+.foot_a li h2 {
+    position: absolute;
+    top: 10px;
+    left: 70px;
+}
+
+.foot_a li p {
+    position: absolute;
+    top: 40px;
+    left: 70px;
+    color: #666;
 }
 
 /*底部导航*/
@@ -304,4 +334,10 @@ footer {
 
 .copyright > p {
     color: #999;
+}
+
+/******************************主体内容******************************/
+div.container {
+    height: 1000px;
+    background: #eee;
 }
