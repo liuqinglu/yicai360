@@ -333,6 +333,47 @@ footer {
 
 /******************************主体内容******************************/
 div.container {
-    height: 1000px;
+    /*background: #eee;*/
+}
+
+.container > div:nth-child(odd) {
+    background: #fcfcfc;
+    height: 570px;
+}
+
+.container > div:nth-child(even) {
     background: #eee;
+    height: 300px;
+}
+
+.left_style_list {
+    width: 160px;
+    height: 570px;
+    background: #6cf;
+}
+
+.left_style_list > ul > li {
+    width: 150px;
+    height: 40px;
+    padding-left: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #333;
+    background: rgba(15, 15, 15, .8);
+}
+
+.left_style_list > ul > li:hover {
+    width: 147px;
+    border-left: 3px solid #f00;
+    background: #666;
+}
+
+.left_style_list > ul > li > a {
+    font-size: 14px;
+    color: #fff;
+}
+.iconfont{
+    font-size: 36px;
+    position: relative;
+    top: 8px;
+    left: 0;
 }
