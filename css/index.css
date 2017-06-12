@@ -91,7 +91,7 @@ ul > li {
 
 /*搜索框样式*/
 .search_box {
-    width: 624px;
+    width: 600px;
     height: 100px;
     line-height: 100px;
     position: absolute;
@@ -101,8 +101,8 @@ ul > li {
 }
 
 .search_box input {
-    height: 40px;
-    width: 500px;
+    height: 36px;
+    width: 476px;
     outline: none;
     border: 2px solid #f00;
     padding: 0 10px;
@@ -112,14 +112,19 @@ ul > li {
 .search_btn {
     display: inline-block;
     width: 100px;
-    height: 44px;
-    line-height: 44px;
+    height: 40px;
+    line-height: 40px;
     font-size: 18px;
+    font-weight: 600;
     text-align: center;
     color: #fff;
     background: #f00;
     position: absolute;
-    top: 29px;
+    top: 31px;
+}
+
+.search_btn:hover {
+    color: #fff;
 }
 
 /*询价按钮*/
@@ -135,12 +140,20 @@ ul > li {
     background: #eee;
     text-align: center;
     display: inline-block;
-    width: 110px;
+    width: 120px;
     height: 40px;
     line-height: 40px;
-    border: 2px solid #c30;
     margin-left: 10px;
-    font-size: 1.5rem;
+    font-size: 16px;
+}
+
+.enquiry > .a_btn:hover {
+    width: 118px;
+    height: 38px;
+    line-height: 38px;
+    border: 1px solid #c30;
+    color: #f00;
+    background: #fff;
 }
 
 /*固定头部*/
@@ -202,21 +215,6 @@ ul > li {
 
 /*************************************左侧 商品分类 导航***************************************/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /******************************************************************************/
 
 /***********右侧导航列表**********/
@@ -250,7 +248,7 @@ ul > li {
 }
 
 /******************************主体内容******************************/
-div.content {
+div.container {
     height: 1000px;
     background: #cef;
 }
