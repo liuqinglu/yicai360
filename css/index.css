@@ -333,47 +333,97 @@ footer {
 
 /******************************主体内容******************************/
 div.container {
-    /*background: #eee;*/
+    /*background: #ccc;*/
 }
 
-.container > div:nth-child(odd) {
+.container > div.bg1 {
     background: #fcfcfc;
     height: 570px;
 }
 
-.container > div:nth-child(even) {
+.container > div.bg2 {
     background: #eee;
     height: 300px;
 }
 
-.left_style_list {
+/*第一部分左侧导航列表*/
+.first_left {
+    float: left;
     width: 160px;
     height: 570px;
     background: #6cf;
 }
 
-.left_style_list > ul > li {
+.first_left > ul > li {
     width: 150px;
     height: 40px;
     padding-left: 10px;
     cursor: pointer;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid #123;
     background: rgba(15, 15, 15, .8);
 }
 
-.left_style_list > ul > li:hover {
+.first_left > ul > li:hover {
     width: 147px;
     border-left: 3px solid #f00;
     background: #666;
 }
 
-.left_style_list > ul > li > a {
+.first_left > ul > li > a {
     font-size: 14px;
     color: #fff;
 }
-.iconfont{
+
+.iconfont {
     font-size: 36px;
     position: relative;
     top: 8px;
     left: 0;
+}
+
+/*边框阴影*/
+.box_shadow {
+    background: #fff;
+    box-shadow: 1px 1px 10px 1px #aaa;
+}
+
+/**************第一部分中间栏**************/
+
+/*中间轮播图*/
+.first_center {
+    float: left;
+    width: 740px;
+    height: 550px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.first_center > .ct {
+    width: 740px;
+    height: 330px;
+}
+
+.first_center > .cb {
+    width: 740px;
+    height: 200px;
+    margin-top: 20px;
+}
+
+/**************第一部分右侧**************/
+.first_right {
+    float: right;
+    width: 260px;
+    height: 550px;
+    margin-top: 20px;
+}
+
+.first_right > .rt {
+    width: 260px;
+    height: 330px;
+}
+
+.first_right > .rb {
+    width: 260px;
+    height: 200px;
+    margin-top: 20px;
 }
