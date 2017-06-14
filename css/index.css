@@ -67,29 +67,29 @@ ul.rt > li {
     background: #fff;
 }
 
-.h100 {
-    height: 100px;
+.h60 {
+    height: 60px;
     position: relative;
+    top: 30px;
 }
 
 /*logo*/
 .logo {
     width: 200px;
-    height: 100px;
+    height: 60px;
     position: absolute;
     top: 0;
     left: 0;
 }
 
 .logo > a {
-    position: absolute;
-    left: 0;
-    top: 10px;
     width: 200px;
-    height: 83px;
-    line-height: 83px;
+    height: 60px;
     outline: none;
     cursor: pointer;
+    position: absolute;
+    top: 3px;
+    left: 0;
     z-index: 9;
     background: url(../img/logo.png) no-repeat;
 }
@@ -97,25 +97,27 @@ ul.rt > li {
 /*搜索框样式*/
 .search_box {
     width: 600px;
-    height: 100px;
-    line-height: 100px;
+    height: 60px;
     position: absolute;
     left: 300px;
     top: 0;
-    z-index: 70;
+    z-index: 90;
 }
 
 .search_box input {
-    height: 36px;
+    display: block;
     width: 476px;
+    height: 36px;
     outline: none;
     border: 2px solid #f00;
     padding: 0 10px;
+    position: absolute;
+    top: 18px;
 }
 
 /*搜索按钮*/
 .search_btn {
-    display: inline-block;
+    display: block;
     width: 100px;
     height: 40px;
     line-height: 40px;
@@ -125,7 +127,8 @@ ul.rt > li {
     color: #fff;
     background: #f00;
     position: absolute;
-    top: 31px;
+    top: 18px;
+    right: 0;
 }
 
 .search_btn:hover {
@@ -134,9 +137,10 @@ ul.rt > li {
 
 /*询价按钮*/
 .enquiry {
-    height: 100px;
-    line-height: 104px;
+    height: 60px;
+    line-height: 64px;
     position: absolute;
+    top: 6px;
     right: 0;
 }
 
@@ -163,9 +167,10 @@ ul.rt > li {
 
 /*固定头部*/
 .fixedTop {
+    margin-top: -30px;
     position: fixed;
     top: 0;
-    height: 75px;
+    height: 90px;
     border-bottom: 1px solid #ddd;
     box-shadow: 0 0 10px rgba(0, 0, 0, .2);
     z-index: 999;
@@ -228,7 +233,6 @@ ul.rt > li {
     position: relative;
     z-index: 72;
     height: 40px;
-    float: left;
     padding-left: 20px;
 }
 
@@ -332,26 +336,34 @@ footer {
 }
 
 /******************************主体内容******************************/
+
+/*边框阴影*/
+.box_shadow {
+    background: #fff;
+    box-shadow: 1px 1px 5px 1px #ddd;
+}
+
 div.container {
     /*background: #ccc;*/
 }
 
 .container > div.bg1 {
     background: #fcfcfc;
-    height: 570px;
+    height: 574px;
 }
 
 .container > div.bg2 {
     background: #eee;
-    height: 300px;
+    height: 500px;
 }
 
 /*第一部分左侧导航列表*/
 .first_left {
     float: left;
     width: 160px;
-    height: 570px;
+    height: 574px;
     background: #6cf;
+    position: relative;
 }
 
 .first_left > ul > li {
@@ -374,18 +386,27 @@ div.container {
     color: #fff;
 }
 
-.iconfont {
+.first_left > ul > li > .iconfont {
     font-size: 36px;
     position: relative;
     top: 8px;
     left: 0;
 }
 
-/*边框阴影*/
-.box_shadow {
-    background: #fff;
-    box-shadow: 1px 1px 10px 1px #aaa;
+/*********************************************************************************/
+
+/*左侧浮动层*/
+.first_left > .first_float_layer {
+    width: 780px;
+    height: 574px;
+    background: #9cf;
+    position: absolute;
+    top: 0;
+    left: 160px;
 }
+
+
+/*********************************************************************************/
 
 /**************第一部分中间栏**************/
 
@@ -394,7 +415,7 @@ div.container {
     float: left;
     width: 740px;
     height: 550px;
-    margin-top: 20px;
+    margin-top: 24px;
     margin-left: 20px;
 }
 
@@ -409,21 +430,149 @@ div.container {
     margin-top: 20px;
 }
 
-/**************第一部分右侧**************/
+/**************第一部分 右侧**************/
 .first_right {
     float: right;
     width: 260px;
     height: 550px;
-    margin-top: 20px;
+    margin-top: 24px;
 }
 
+/*第一部分右侧 登录注册*/
 .first_right > .rt {
     width: 260px;
     height: 330px;
 }
 
+.rt1, .rt2, .rt3 {
+    width: 200px;
+    margin: 0 30px;
+}
+
+/*头像*/
+.rt1 {
+    color: #c30;
+    text-align: center;
+    height: 120px;
+    padding-top: 15px;
+}
+
+.rt1 > a {
+    display: block;
+    margin: auto;
+    width: 70px;
+    height: 70px;
+    background: #efc;
+    border-radius: 35px;
+}
+
+.rt1 > a > img {
+    display: block;
+    margin: auto;
+    width: 70px;
+    height: 70px;
+    background: #efc;
+    border-radius: 35px;
+}
+
+.rt1 > p {
+    margin: 5px;
+    font-size: 14px;
+}
+
+/*右侧登录注册按钮*/
+.rt2 {
+    margin-top: 10px;
+}
+
+.rt2 > a {
+    display: inline-block;
+    width: 90px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.rt2_login {
+    color: #fff;
+    background-color: #c00;
+    border: 1px solid #c00;
+}
+
+.rt2_reg {
+    float: right;
+    color: #c00;
+    background-color: #fff;
+    border: 1px solid #c00;
+}
+
+/*直、保、快、验*/
+.rt3 {
+    margin-top: 20px;
+}
+
+.rt3 > img {
+    width: 24px;
+    height: 26px;
+    margin-right: 31px;
+}
+
+/*加盟、买家特权*/
+.rt4 {
+    margin-top: 10px;
+    width: 260px;
+    border-top: 1px solid #ccc;
+}
+
+.rt4 > a {
+    float: left;
+    width: 129px;
+    height: 88px;
+}
+
+.rt4 > a > img {
+    margin-top: 10px;
+    margin-left: 25px;
+}
+
+/*第一部分右侧公告栏*/
 .first_right > .rb {
     width: 260px;
     height: 200px;
     margin-top: 20px;
+}
+
+/*公告标题栏*/
+.notice_title {
+    width: 260px;
+    height: 40px;
+}
+
+.rb > .notice_title {
+    margin: auto;
+    width: 240px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+}
+
+.rb > hr {
+    margin: 0;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+
+.rb > .notice_title > .more {
+    color: #666;
+    float: right;
+}
+
+/*公告列表栏*/
+.rb > ul {
+    width: 250px;
+    height: 160px;
+    white-space: nowrap; /* 强制在同一行内显示所有文本，直到文本结束或者遭遇 br 对象。不换行 */
+    overflow: hidden; /* 内容超出宽度时隐藏超出部分的内容 */
 }
