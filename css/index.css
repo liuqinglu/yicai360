@@ -34,28 +34,28 @@ header {
 }
 
 /*顶部的导航部分*/
-ul {
+.topNav.lt, .topNav .rt {
     color: #999;
     height: 30px;
     line-height: 30px;
 }
 
 /*左侧 登录注册*/
-ul.lt {
+.lt {
     float: left;
 }
 
-ul.lt > li {
+.lt > li {
     float: left;
     padding: 0 5px;
 }
 
 /*右侧 帮助中心*/
-ul.rt {
+.rt {
     float: right;
 }
 
-ul.rt > li {
+.rt > li {
     float: left;
     padding: 0 5px;
 }
@@ -274,8 +274,8 @@ footer {
 
 .foot_a li {
     float: left;
-    height: 80px;
     width: 300px;
+    height: 80px;
     color: #000;
     position: relative;
 }
@@ -309,6 +309,11 @@ footer {
 .group_item {
     float: left;
     margin-right: 150px;
+}
+
+.group_item > ul > li {
+    height: 30px;
+    line-height: 30px;
 }
 
 .footer-logo {
@@ -369,6 +374,7 @@ div.container {
 .first_left > ul > li {
     width: 150px;
     height: 40px;
+    line-height: 20px;
     padding-left: 10px;
     cursor: pointer;
     border-bottom: 1px solid #123;
@@ -399,12 +405,50 @@ div.container {
 .first_left > .first_float_layer {
     width: 780px;
     height: 574px;
-    background: #9cf;
+    background: #fefefe;
     position: absolute;
     top: 0;
     left: 160px;
+    box-shadow: 5px 3px 10px 3px #ddd;
 }
 
+.first_float_layer_c {
+    width: 740px;
+    height: 550px;
+    /*background: #ecf;*/
+    position: absolute;
+    left: 20px;
+}
+
+.first_float_layer_c > h2 {
+    border-left: 5px solid #c00;
+    padding-left: 10px;
+}
+
+.style_list {
+    width: 100%;
+    height: 110px;
+    /*background: #cef;*/
+}
+
+.style_list > h3 {
+    color: #666;
+}
+
+.style_list > hr {
+    border: none;
+    border-bottom: 1px solid #c33;
+}
+
+.style_list > ul > li {
+    float: left;
+    margin-right: 30px;
+}
+
+.style_list a {
+    /*color: #666;*/
+    font-size: 14px;
+}
 
 /*********************************************************************************/
 
@@ -444,20 +488,20 @@ div.container {
     height: 330px;
 }
 
-.rt1, .rt2, .rt3 {
+.first_right .rt1, .first_right .rt2, .first_right .rt3 {
     width: 200px;
     margin: 0 30px;
 }
 
 /*头像*/
-.rt1 {
+.first_right .rt1 {
     color: #c30;
     text-align: center;
     height: 120px;
     padding-top: 15px;
 }
 
-.rt1 > a {
+.first_right .rt1 > a {
     display: block;
     margin: auto;
     width: 70px;
@@ -466,7 +510,7 @@ div.container {
     border-radius: 35px;
 }
 
-.rt1 > a > img {
+.first_right .rt1 > a > img {
     display: block;
     margin: auto;
     width: 70px;
@@ -475,17 +519,18 @@ div.container {
     border-radius: 35px;
 }
 
-.rt1 > p {
+.first_right .rt1 > p {
+    height: 15px;
     margin: 5px;
     font-size: 14px;
 }
 
 /*右侧登录注册按钮*/
-.rt2 {
+.first_right .rt2 {
     margin-top: 10px;
 }
 
-.rt2 > a {
+.first_right .rt2 > a {
     display: inline-block;
     width: 90px;
     height: 35px;
@@ -494,13 +539,13 @@ div.container {
     font-size: 16px;
 }
 
-.rt2_login {
+.first_right .rt2_login {
     color: #fff;
     background-color: #c00;
     border: 1px solid #c00;
 }
 
-.rt2_reg {
+.first_right .rt2_reg {
     float: right;
     color: #c00;
     background-color: #fff;
@@ -508,30 +553,30 @@ div.container {
 }
 
 /*直、保、快、验*/
-.rt3 {
+.first_right .rt3 {
     margin-top: 20px;
 }
 
-.rt3 > img {
+.first_right .rt3 > img {
     width: 24px;
     height: 26px;
     margin-right: 31px;
 }
 
 /*加盟、买家特权*/
-.rt4 {
+.first_right .rt4 {
     margin-top: 10px;
     width: 260px;
     border-top: 1px solid #ccc;
 }
 
-.rt4 > a {
+.first_right .rt4 > a {
     float: left;
     width: 129px;
     height: 88px;
 }
 
-.rt4 > a > img {
+.first_right .rt4 > a > img {
     margin-top: 10px;
     margin-left: 25px;
 }
@@ -549,7 +594,7 @@ div.container {
     height: 40px;
 }
 
-.rb > .notice_title {
+.first_right .rb > .notice_title {
     margin: auto;
     width: 240px;
     height: 40px;
@@ -557,20 +602,25 @@ div.container {
     font-size: 16px;
 }
 
-.rb > hr {
+.first_right .rb > hr {
     margin: 0;
     width: 100%;
     border: none;
     border-bottom: 1px solid #ccc;
 }
 
-.rb > .notice_title > .more {
+.first_right .rb > ul > li {
+    height: 30px;
+    line-height: 30px;
+}
+
+.first_right .rb > .notice_title > .more {
     color: #666;
     float: right;
 }
 
 /*公告列表栏*/
-.rb > ul {
+.first_right .rb > ul {
     width: 250px;
     height: 160px;
     white-space: nowrap; /* 强制在同一行内显示所有文本，直到文本结束或者遭遇 br 对象。不换行 */
