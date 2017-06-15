@@ -231,7 +231,7 @@ header {
 /***********右侧导航列表**********/
 .funcTab {
     position: relative;
-    z-index: 72;
+    z-index: 99;
     height: 40px;
     padding-left: 20px;
 }
@@ -357,12 +357,12 @@ div.container {
     background: #eee;
 }
 
-/*************************第一部分*************************/
+/*************************第一部分 导航列表和轮播图*************************/
 .container > div.f1 {
     height: 574px;
 }
 
-/**************第一部分左侧**************/
+/**************第一部分 左侧商品分类导航**************/
 .first_left {
     float: left;
     width: 160px;
@@ -408,6 +408,7 @@ div.container {
     top: 0;
     left: 160px;
     box-shadow: 5px 3px 10px 3px #ddd;
+    z-index: 990;
 }
 
 .first_float_layer_c {
@@ -448,8 +449,8 @@ div.container {
     font-size: 14px;
 }
 
-/**************第一部分 中间**************/
-/*中间轮播图*/
+/**************第一部分 中间轮播图**************/
+/*中间轮播大图*/
 .first_center {
     float: left;
     width: 740px;
@@ -461,6 +462,55 @@ div.container {
 .first_center > .ct {
     width: 740px;
     height: 330px;
+    position: relative;
+}
+
+/*轮播大图*/
+/*wrap的轮播图和切换按钮样式*/
+.wrap {
+    width: 740px;
+    height: 330px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.wrap ul {
+    position: absolute;
+}
+
+.wrap ul li {
+    width: 740px;
+    height: 330px;
+}
+
+.wrap ul li a img{
+    width: 740px;
+    height: 330px;
+}
+
+.wrap ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+.wrap ol li {
+    float: left;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    margin-left: 10px;
+    background-color: #fff;
+}
+
+.wrap ol li.active {
+    color: #fff;
+    background-color: #f00;
 }
 
 .first_center > .cb {
@@ -622,7 +672,7 @@ div.container {
     overflow: hidden; /* 内容超出宽度时隐藏超出部分的内容 */
 }
 
-/*************************第二部分*************************/
+/*************************第二部分 买家询盘*************************/
 
 .container > div.f2 {
     height: 700px;
@@ -699,7 +749,7 @@ div.container {
     background-position: center top;
 }
 
-/******************广告******************/
+/*************************广告*************************/
 .poster {
     height: 120px;
     /*margin: 10px auto;*/
@@ -953,7 +1003,7 @@ div.container {
     border: 1px solid #f30;
 }
 
-/**************************第六部分****************************/
+/**************************第六部分 招商加盟****************************/
 .f6_title1 {
     background: url("../img/f6-icon1.png") no-repeat;
     padding-left: 30px;

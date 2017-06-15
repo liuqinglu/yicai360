@@ -80,10 +80,10 @@
 </header>
 <!--主要内容-->
 <div class="container">
-    <!--第一部分-->
+    <!--第一部分 导航列表和轮播图-->
     <div class="f1">
         <div class="w1200">
-            <!--左侧商品分类-->
+            <!--左侧商品分类导航-->
             <nav class="first_left">
                 <ul>
                     <li><span></span><a href="#">瓷砖</a><span class="iconfont">◇</span></li>
@@ -189,7 +189,23 @@
             </nav>
             <!--中间轮播图-->
             <div class="first_center">
-                <div class="box_shadow ct">top</div>
+                <div class="box_shadow ct wrap" id="wrap">
+                    <!-- wrap包裹录播的图片以及可点击跳转的按钮 -->
+                    <ul id="pic">
+                        <li><a href="#"><img src="images/pic_001.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="images/pic_002.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="images/pic_003.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="images/pic_004.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="images/pic_005.jpg" alt=""></a></li>
+                    </ul>
+                    <ol id="list">
+                        <li class="active">1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                    </ol>
+                </div>
                 <div class="box_shadow cb">bottom</div>
             </div>
             <!--右侧栏-->
@@ -240,7 +256,7 @@
             </div>
         </div>
     </div>
-    <!--第二部分-->
+    <!--第二部分 买家询盘-->
     <div class="f2">
         <div class="w1200">
             <div class="floor_title">
@@ -728,6 +744,7 @@
                  style="width:1200px; height:120px;">
         </a>
     </div>
+    <!--第六部分 招商加盟-->
     <div class="f6">
         <div class="w1200">
             <div class="floor_title">
@@ -853,9 +870,11 @@
     </div>
 </footer>
 <script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/index.js"></script>
 <script>
+    'use strict';
     $(function () {
-//        固定头部
+        //固定头部
         var searchObj = $(".logo_search"); //得到搜索栏对象
         var win = $(window); //得到窗口对象
         var doc = $(document);//得到document文档对象
@@ -866,12 +885,14 @@
                 searchObj.removeClass("fixedTop");
             }
         });
-//鼠标移入显示
+        //鼠标移入显示
         $('.first_left>ul>li').hover(function () {
             $(".first_float_layer").css('display', 'block');
         }, function () {
             $(".first_float_layer").css('display', 'none');
         });
+        //自动轮播
+        autoPlay('wrap', 'pic', 'li', 'list');
     });
 </script>
 </body>
