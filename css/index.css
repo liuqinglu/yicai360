@@ -363,7 +363,7 @@ div.container {
 }
 
 /**************第一部分 左侧商品分类导航**************/
-.first_left {
+.f1_left {
     float: left;
     width: 160px;
     height: 574px;
@@ -371,7 +371,7 @@ div.container {
     position: relative;
 }
 
-.first_left > ul > li {
+.f1_left > ul > li {
     width: 150px;
     height: 40px;
     line-height: 20px;
@@ -381,18 +381,18 @@ div.container {
     background: rgba(15, 15, 15, .8);
 }
 
-.first_left > ul > li:hover {
+.f1_left > ul > li:hover {
     width: 147px;
     border-left: 3px solid #f00;
     background: #666;
 }
 
-.first_left > ul > li > a {
+.f1_left > ul > li > a {
     font-size: 14px;
     color: #fff;
 }
 
-.first_left > ul > li > .iconfont {
+.f1_left > ul > li > .iconfont {
     font-size: 36px;
     position: relative;
     top: 8px;
@@ -400,7 +400,7 @@ div.container {
 }
 
 /*左侧浮动层*/
-.first_left > .first_float_layer {
+.f1_left > .f1_float_layer {
     width: 780px;
     height: 574px;
     background: #fefefe;
@@ -411,7 +411,7 @@ div.container {
     z-index: 990;
 }
 
-.first_float_layer_c {
+.f1_float_layer_c {
     width: 740px;
     height: 550px;
     /*background: #ecf;*/
@@ -419,39 +419,39 @@ div.container {
     left: 20px;
 }
 
-.first_float_layer_c > h2 {
+.f1_float_layer_c > h2 {
     border-left: 5px solid #c00;
     padding-left: 10px;
 }
 
-.style_list {
+.f1_style_list {
     width: 100%;
     height: 110px;
     /*background: #cef;*/
 }
 
-.style_list > h3 {
+.f1_style_list > h3 {
     color: #666;
 }
 
-.style_list > hr {
+.f1_style_list > hr {
     border: none;
     border-bottom: 1px solid #c33;
 }
 
-.style_list > ul > li {
+.f1_style_list > ul > li {
     float: left;
     margin-right: 30px;
 }
 
-.style_list a {
+.f1_style_list a {
     /*color: #666;*/
     font-size: 14px;
 }
 
 /**************第一部分 中间轮播图**************/
 /*中间轮播大图*/
-.first_center {
+.f1_center {
     float: left;
     width: 740px;
     height: 550px;
@@ -459,7 +459,7 @@ div.container {
     margin-left: 20px;
 }
 
-.first_center > .ct {
+.f1_center > .ct {
     width: 740px;
     height: 330px;
     position: relative;
@@ -513,14 +513,14 @@ div.container {
     background-color: #f00;
 }
 
-.first_center > .cb {
+.f1_center > .cb {
     width: 740px;
     height: 200px;
     margin-top: 20px;
 }
 
 /**************第一部分 右侧**************/
-.first_right {
+.f1_right {
     float: right;
     width: 260px;
     height: 550px;
@@ -528,25 +528,25 @@ div.container {
 }
 
 /*右侧 登录注册*/
-.first_right > .rt {
+.f1_right > .rt {
     width: 260px;
     height: 330px;
 }
 
-.first_right .rt1, .first_right .rt2, .first_right .rt3 {
+.f1_right .rt1, .f1_right .rt2, .f1_right .rt3 {
     width: 200px;
     margin: 0 30px;
 }
 
 /*右侧头像*/
-.first_right .rt1 {
+.f1_right .rt1 {
     color: #c30;
     text-align: center;
     height: 120px;
     padding-top: 15px;
 }
 
-.first_right .rt1 > a {
+.f1_right .rt1 > a {
     display: block;
     margin: auto;
     width: 70px;
@@ -555,7 +555,7 @@ div.container {
     border-radius: 35px;
 }
 
-.first_right .rt1 > a > img {
+.f1_right .rt1 > a > img {
     display: block;
     margin: auto;
     width: 70px;
@@ -564,17 +564,17 @@ div.container {
     border-radius: 35px;
 }
 
-.first_right .rt1 > p {
+.f1_right .rt1 > p {
     margin: 5px;
     font-size: 14px;
 }
 
 /*右侧登录注册按钮*/
-.first_right .rt2 {
+.f1_right .rt2 {
     margin-top: 10px;
 }
 
-.first_right .rt2 > a {
+.f1_right .rt2 > a {
     display: inline-block;
     width: 90px;
     height: 35px;
@@ -583,13 +583,13 @@ div.container {
     font-size: 16px;
 }
 
-.first_right .rt2_login {
+.f1_right .rt2_login {
     color: #fff;
     background-color: #c00;
     border: 1px solid #c00;
 }
 
-.first_right .rt2_reg {
+.f1_right .rt2_reg {
     float: right;
     color: #c00;
     background-color: #fff;
@@ -597,36 +597,36 @@ div.container {
 }
 
 /*直、保、快、验*/
-.first_right .rt3 {
+.f1_right .rt3 {
     margin-top: 20px;
 }
 
-.first_right .rt3 > img {
+.f1_right .rt3 > img {
     width: 24px;
     height: 26px;
     margin-right: 31px;
 }
 
 /*加盟、买家特权*/
-.first_right .rt4 {
+.f1_right .rt4 {
     margin-top: 10px;
     width: 260px;
     border-top: 1px solid #ccc;
 }
 
-.first_right .rt4 > a {
+.f1_right .rt4 > a {
     float: left;
     width: 129px;
     height: 88px;
 }
 
-.first_right .rt4 > a > img {
+.f1_right .rt4 > a > img {
     margin-top: 10px;
     margin-left: 25px;
 }
 
 /*右侧公告栏*/
-.first_right > .rb {
+.f1_right > .rb {
     width: 260px;
     height: 200px;
     /*margin-top: 20px;*/
@@ -639,7 +639,7 @@ div.container {
     height: 40px;
 }
 
-.first_right .rb > .notice_title {
+.f1_right .rb > .notice_title {
     margin: auto;
     width: 240px;
     height: 40px;
@@ -647,25 +647,25 @@ div.container {
     font-size: 16px;
 }
 
-.first_right .rb > hr {
+.f1_right .rb > hr {
     margin: 0;
     width: 100%;
     border: none;
     border-bottom: 1px solid #ccc;
 }
 
-.first_right .rb > ul > li {
+.f1_right .rb > ul > li {
     height: 30px;
     line-height: 30px;
 }
 
-.first_right .rb > .notice_title > .more {
+.f1_right .rb > .notice_title > .more {
     color: #666;
     float: right;
 }
 
 /*公告列表栏*/
-.first_right .rb > ul {
+.f1_right .rb > ul {
     width: 250px;
     height: 160px;
     white-space: nowrap; /* 强制在同一行内显示所有文本，直到文本结束或者遭遇 br 对象。不换行 */

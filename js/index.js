@@ -68,8 +68,8 @@ var autoPlay = function (boxID, ulID, childTag, olID) {
 
 //左侧商品分类导航
 //鼠标移入显示
-$('.first_left>ul>li').hover(function () {
-    $(".first_float_layer").css('display', 'block');
+$('.f1_style_item').hover(function () {
+    $(".f1_float_layer").css('display', 'block');
 }, function () {
-    $(".first_float_layer").css('display', 'none');
+    $(".f1_float_layer").css('display', 'none');
 });
