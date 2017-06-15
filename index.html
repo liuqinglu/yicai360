@@ -32,7 +32,7 @@
         </div>
     </nav>
     <!--logo、搜索、询价部分-->
-    <div class="logo_search">
+    <div class="logo_search" id="logoSearch">
         <div class="w1200 h60">
             <!--logo-->
             <div class="logo">
@@ -874,23 +874,7 @@
 <script>
     'use strict';
     $(function () {
-        //固定头部
-        var searchObj = $(".logo_search"); //得到搜索栏对象
-        var win = $(window); //得到窗口对象
-        var doc = $(document);//得到document文档对象
-        win.scroll(function () {
-            if (doc.scrollTop() >= 60) {
-                searchObj.addClass("fixedTop");
-            } else {
-                searchObj.removeClass("fixedTop");
-            }
-        });
-        //鼠标移入显示
-        $('.first_left>ul>li').hover(function () {
-            $(".first_float_layer").css('display', 'block');
-        }, function () {
-            $(".first_float_layer").css('display', 'none');
-        });
+        //autoFixed(1,2,3,4);
         //自动轮播
         autoPlay('wrap', 'pic', 'li', 'list');
     });

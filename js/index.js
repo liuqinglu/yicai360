@@ -2,6 +2,19 @@
  * Created by lql on 2017/6/5 0005.
  */
 
+//固定头部
+// var autoFixed = function (boxID, ulID, childTag, fixedTop) {};
+var searchObj = $("#logoSearch"); //得到搜索栏对象
+var win = $(window); //得到窗口对象
+var doc = $(document);//得到document文档对象
+win.scroll(function () {
+    if (doc.scrollTop() >= 60) {
+        searchObj.addClass("fixedTop");
+    } else {
+        searchObj.removeClass("fixedTop");
+    }
+});
+
 //自动轮播
 //boxID 外层容器, ulID 图片列表父级, childTag 图片列表标签名称, olID 序列号
 var autoPlay = function (boxID, ulID, childTag, olID) {
@@ -52,3 +65,11 @@ var autoPlay = function (boxID, ulID, childTag, olID) {
         index = curIndex;
     }
 };
+
+//左侧商品分类导航
+//鼠标移入显示
+$('.first_left>ul>li').hover(function () {
+    $(".first_float_layer").css('display', 'block');
+}, function () {
+    $(".first_float_layer").css('display', 'none');
+});
