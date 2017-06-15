@@ -952,3 +952,22 @@ div.container {
     border-radius: 5px;
     border: 1px solid #f30;
 }
+
+/**************************第六部分****************************/
+.f6_title1 {
+    background: url("../img/f6-icon1.png") no-repeat;
+    padding-left: 30px;
+}
+
+.f6_title2 {
+    background: url("../img/f6-icon2.png") no-repeat;
+    padding-left: 30px;
+}
+
+.f6_img_box1 {
+    height: 300px;
+}
+
+.f6_img_box2 {
+    height: 300px;
+}
