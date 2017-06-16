@@ -484,7 +484,7 @@ div.container {
     height: 330px;
 }
 
-.wrap ul li a img{
+.wrap ul li a img {
     width: 740px;
     height: 330px;
 }
@@ -1020,4 +1020,39 @@ div.container {
 
 .f6_img_box2 {
     height: 300px;
+}
+
+/*左侧楼层导航*/
+.left-menu {
+    display: block;
+    width: 35px;
+    height: 350px;
+    position: fixed;
+    top: 50%;
+    margin-top: -175px;
+    left: 50%;
+    margin-left: -660px;
+    z-index: 66;
+}
+
+.left-menu a {
+    display: inline-block;
+    width: 35px;
+    height: 44px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 13px;
+    color: #fff;
+    background-color: #999;
+    border-bottom: 1px solid #ccc;
+    padding-top: 5px;
+}
+
+.left-menu a:hover {
+    background-color: #c30;
+}
+
+.left-menu a img {
+    height: 50px;
+    width: 35px;
 }
