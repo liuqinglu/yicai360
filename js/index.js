@@ -2,7 +2,7 @@
  * Created by lql on 2017/6/5 0005.
  */
 
-//固定头部
+/*固定头部*/
 // var autoFixed = function (boxID, ulID, childTag, fixedTop) {};
 var searchObj = $("#logoSearch"); //得到搜索栏对象
 var win = $(window); //得到窗口对象
@@ -15,8 +15,13 @@ win.scroll(function () {
     }
 });
 
-//自动轮播
-//boxID 外层容器, ulID 图片列表父级, childTag 图片列表标签名称, olID 序列号
+/**
+ * 自动轮播
+ * @param boxID 外层容器
+ * @param ulID 图片列表父级
+ * @param childTag 图片列表标签名称
+ * @param olID 序列号
+ */
 var autoPlay = function (boxID, ulID, childTag, olID) {
     var wrap = document.getElementById('wrap'),
         pic = document.getElementById('pic'),
@@ -45,7 +50,7 @@ var autoPlay = function (boxID, ulID, childTag, olID) {
     };
     // 鼠标离开整个容器时继续播放至下一张
     wrap.onmouseout = function () {
-        timer = setInterval(autoPlay, 500);
+        timer = setInterval(autoPlay, 2000);
     };
     // 遍历所有数字导航实现划过切换至对应的图片
     for (var i = 0; i < list.length; i++) {
@@ -66,7 +71,9 @@ var autoPlay = function (boxID, ulID, childTag, olID) {
     }
 };
 
-//左侧商品分类导航
+/**
+ * 左侧商品分类导航
+ */
 //鼠标移入显示
 $('.f1_style_item').hover(function () {
     $(".f1_float_layer").css('display', 'block');
