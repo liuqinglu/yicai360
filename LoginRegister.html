@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>登录</title>
-    <link rel="stylesheet" href="css/LoginRegister.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/LoginRegister.css">
 </head>
 <body>
 <!--页面头部-->
@@ -23,9 +23,12 @@
                 <li>|</li>
                 <li><a href="#">我的订单</a></li>
                 <li>|</li>
-                <li class="padding-right:20px;"><a href="#">消息中心
-                    <div class="msg_num">86</div>
-                </a></li>
+                <li class="padding-right:20px;">
+                    <a href="#">
+                        消息中心
+                        <div class="msg_num">86</div>
+                    </a>
+                </li>
                 <li>|</li>
                 <li><a href="#">在线客服</a></li>
                 <li>|</li>
@@ -36,9 +39,40 @@
         </div>
     </nav>
 </header>
+<!--logo部分-->
+<div class="login-img-box w1200">
+    <a href="#"><img class="login-logo-img" src="img/login-logo.png" alt="欢迎登录"></a>
+</div>
+<!--注册按钮-->
+<div class="login-register-box w1200">
+    <div class="register">
+        还不是材易采会员？<a href="#">立即注册</a>
+    </div>
+</div>
 <!--主要内容-->
-<div class="container">
-
+<div class="container-box">
+    <!--登录表单-->
+    <div class="container w1200">
+        <div class="login-box">
+            <div class="login-box-header">
+                <div class="on">采购商登录</div>
+                <div class="">供应商登录</div>
+            </div>
+            <div class="login-box-container">
+                <ul>
+                    <li><span><em>*</em> 账号：</span>
+                        <input id="userName" name="userName" type="text" class="login-text" placeholder="请输入手机号！">
+                        <p><a href="#">忘记账号？</a></p>
+                    </li>
+                    <li><span><em>*</em> 密码：</span>
+                        <input id="password" name="password" type="password" class="login-text" placeholder="请输入密码！">
+                        <p><a href="#">忘记密码？</a></p>
+                    </li>
+                    <li><a id="loginBtn" href="javascript:void(0);">登录</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </div>
 <!--页面底部-->
 <footer>
@@ -142,7 +176,14 @@
 <script>
     'use strict';
     $(function () {
-
+        $('.login-box-header>div').click(function () {
+            $(this).addClass('on').siblings().removeClass('on');
+            if ($(this).text() === '供应商登录') {
+                $('#userName').attr('placeholder', '请输入企业名！');
+            } else {
+                $('#userName').attr('placeholder', '请输入手机号！');
+            }
+        })
     });
 </script>
 </body>
