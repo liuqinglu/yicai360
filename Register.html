@@ -2,10 +2,10 @@
 <html lang="zh">
 <head>
     <meta charset="UTF-8">
-    <title>登录——材易采</title>
+    <title>注册——材易采</title>
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/Login.css">
+    <link rel="stylesheet" href="css/Register.css">
 </head>
 <body>
 <!--页面头部-->
@@ -41,37 +41,22 @@
 </header>
 <!--logo部分-->
 <div class="login-img-box w1200">
-    <a href="#"><img class="login-logo-img" src="img/login-logo.png" alt="欢迎登录"></a>
+    <a href="#"><img class="login-logo-img" src="img/regedit-logo.png" alt="注册账号"></a>
 </div>
-<!--注册按钮-->
+<!--登录按钮-->
 <div class="login-register-box w1200">
-    <div class="register">
-        还不是材易采会员？<a href="#">立即注册</a>
+    <div class="">
+        <div>采购商注册</div>
+        <div>供应商注册</div>
+    </div>
+    <div class="login">
+        已经是材易采会员？<a href="#">立即登录</a>
     </div>
 </div>
 <!--主要内容-->
 <div class="container-box">
-    <!--登录表单-->
+    <!--注册表单-->
     <div class="container w1200">
-        <div class="login-box">
-            <div class="login-box-header">
-                <div class="on">采购商登录</div>
-                <div class="">供应商登录</div>
-            </div>
-            <div class="login-box-container">
-                <ul>
-                    <li><span><em>*</em> 账号：</span>
-                        <input id="userName" name="userName" type="text" class="login-text" placeholder="请输入手机号">
-                        <p><a href="#">忘记账号？</a></p>
-                    </li>
-                    <li><span><em>*</em> 密码：</span>
-                        <input id="password" name="password" type="password" class="login-text" placeholder="请输入密码">
-                        <p><a href="#">忘记密码？</a></p>
-                    </li>
-                    <li><a id="loginBtn" href="javascript:void(0);">登录</a></li>
-                </ul>
-            </div>
-        </div>
     </div>
 </div>
 <!--页面底部-->
@@ -172,19 +157,5 @@
         </div>
     </div>
 </footer>
-<script src="js/jquery-3.2.1.min.js"></script>
-<script>
-    'use strict';
-    $(function () {
-        $('.login-box-header>div').click(function () {
-            $(this).addClass('on').siblings().removeClass('on');
-            if ($(this).text() === '供应商登录') {
-                $('#userName').attr('placeholder', '请输入企业名');
-            } else {
-                $('#userName').attr('placeholder', '请输入手机号');
-            }
-        })
-    });
-</script>
 </body>
 </html>
