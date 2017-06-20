@@ -39,24 +39,73 @@
         </div>
     </nav>
 </header>
-<!--logo部分-->
-<div class="login-img-box w1200">
-    <a href="#"><img class="login-logo-img" src="img/regedit-logo.png" alt="注册账号"></a>
+<!--注册页面 logo部分-->
+<div class="register-img-box w1200">
+    <a href="#"><img class="register-logo-img" src="img/regedit-logo.png" alt="注册账号"></a>
 </div>
-<!--登录按钮-->
-<div class="login-register-box w1200">
-    <div class="">
-        <div>采购商注册</div>
-        <div>供应商注册</div>
+<!--采购商供应商注册切换-->
+<div class="register-login-box w1200">
+    <div class="register-left">
+        <a href="javascript:void(0);" class="on">采购商注册</a>
+        <a href="#" class="">供应商注册</a>
     </div>
-    <div class="login">
+    <div class="login-right">
         已经是材易采会员？<a href="#">立即登录</a>
     </div>
 </div>
 <!--主要内容-->
-<div class="container-box">
+<div class="register-box">
     <!--注册表单-->
-    <div class="container w1200">
+    <div class="register-form w500">
+        <!--采购商注册-->
+        <ul class="caigou">
+            <li>
+                <span><em>*</em>手机号码：</span><input type="text">
+            </li>
+            <li class="sms-captcha">
+                <span><em>*</em>手机验证码：</span>
+                <input type="text">
+                <button>获取短信验证码</button>
+            </li>
+            <li>
+                <span><em>*</em>设置密码：</span><input type="password">
+            </li>
+            <li>
+                <span><em>*</em>确认密码：</span><input type="password">
+            </li>
+            <li class="pic-captcha">
+                <span><em>*</em>验证码：</span>
+                <input type="text">
+                <a href="#"><img src="img/captcha.jpg"></a>
+            </li>
+            <li>
+                <span></span>
+                <p><input type="checkbox">我已阅读并同意<a href="#">《材易采-采购商注册协议》</a></p></li>
+            <li style="padding-bottom: 50px">
+                <span></span>
+                <a id="registerBtn" href="javascript:void(0);">立即注册</a>
+            </li>
+        </ul>
+        <!--供应商注册-->
+        <ul class="gongying">
+            <li><span><em>*</em>企业账号：</span><input type="text"></li>
+            <li><span><em>*</em>设置密码：</span><input type="password"></li>
+            <li><span><em>*</em>确认密码：</span><input type="password"></li>
+            <li><span><em>*</em>企业名称：</span><input type="text" placeholder="请输入企业的名称，与企业执照一致"></li>
+            <li><span><em>*</em>联 系 人：</span><input type="text"></li>
+            <li><span><em>*</em>联系电话：</span><input type="text"></li>
+            <li><span><em>*</em>邮箱账号：</span><input type="text"></li>
+            <li style="height: 100px">
+                <span><em>*</em>企业资料：</span>
+                <div class="file-img"><input type="file"></div>
+                <p>可上传贵企业的三证信息，以及其他相关入驻资料，方便我们尽快处理您的入驻申请。</p>
+            </li>
+            <li style="margin-top: 20px;padding-bottom: 50px;">
+                <span></span>
+                <a id="regBtn" href="javascript:void(0);" class="btn btnY">提交</a>
+                <a id="clsBtn" href="javascript:void(0);" class="btn btnN">取消</a>
+            </li>
+        </ul>
     </div>
 </div>
 <!--页面底部-->
@@ -157,5 +206,20 @@
         </div>
     </div>
 </footer>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script>
+    $(function () {
+        $('.register-left>a').click(function () {
+            $(this).addClass('on').siblings().removeClass('on');
+            if ($(this).text() === '供应商注册') {
+                $('.caigou').css('display', 'none');
+                $('.gongying').css('display', 'block');
+            } else {
+                $('.caigou').css('display', 'block');
+                $('.gongying').css('display', 'none');
+            }
+        })
+    });
+</script>
 </body>
 </html>

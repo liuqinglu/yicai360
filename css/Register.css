@@ -1,0 +1,253 @@
+/*注册页面 logo部分*/
+.register-img-box {
+    height: 100px;
+}
+
+.register-logo-img {
+    width: 438px;
+    height: 86px;
+    margin-top: 10px;
+}
+
+/*采购商供应商注册切换*/
+.register-login-box {
+    height: 46px;
+}
+
+.register-left {
+    float: left;
+    width: 800px;
+    text-align: right;
+}
+
+.register-left > a {
+    display: inline-block;
+    width: 170px;
+    height: 46px;
+    line-height: 46px;
+    text-align: center;
+    margin-left: 20px;
+    font-size: 18px;
+    color: #fff;
+    background: #888;
+    border-radius: 5px 5px 0 0;
+}
+
+.register-left > a:active {
+    background: #f00;
+}
+
+.register-left > .on {
+    background: #c00;
+}
+
+/*登录按钮*/
+.login-right {
+    float: right;
+    width: 210px;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 8px;
+}
+
+.login-right > a {
+    display: inline-block;
+    width: 80px;
+    text-align: center;
+    margin-left: 20px;
+    color: #fff;
+    background: #c00;
+}
+
+/***************************注册表单***************************/
+.w500 {
+    width: 500px;
+    margin: auto;
+}
+
+/*************采购商注册************/
+.register-box {
+    background: #eee;
+}
+
+.register-form {
+    padding-top: 50px;
+}
+
+.register-form > ul {
+    width: 500px;
+}
+
+.register-form > ul > li {
+    width: 482px;
+    height: 70px;
+    font-size: 16px;
+    /*float: left;*/
+    position: relative;
+}
+
+.register-form > ul > li > span {
+    width: 110px;
+    height: 36px;
+    line-height: 36px;
+    text-align: right;
+    margin-right: 15px;
+    float: left;
+}
+
+.register-form > ul > li > span > em {
+    color: #c00;
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+.register-form input {
+    width: 335px;
+    height: 36px;
+    padding: 0 10px;
+    border: 1px solid #ddd;
+    outline: none;
+}
+
+/*输入框获得焦点样式*/
+.register-form input:focus {
+    border: 1px solid #f00;
+}
+
+.sms-captcha > button {
+    position: absolute;
+    width: 110px;
+    height: 36px;
+    top: 1px;
+    right: 0;
+    color: #fff;
+    background: #c00;
+    border: 1px solid #c00;
+    cursor: pointer;
+    outline: none;
+}
+
+.pic-captcha > input {
+    width: 255px;
+    margin-right: 80px;
+}
+
+.pic-captcha > a {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.pic-captcha > a > img {
+    width: 70px;
+    height: 36px;
+}
+
+.register-form p {
+    margin: 0;
+    display: inline-block;
+    font-size: 14px;
+    width: 357px;
+}
+
+.register-form > ul > li > p > input[type=checkbox] {
+    width: 20px;
+    height: 20px;
+    margin-top: 0;
+}
+
+.register-form > ul > li > p > a {
+    color: #c00;;
+}
+
+/*采购商注册按钮*/
+#registerBtn {
+    display: inline-block;
+    background: #c00;
+    width: 350px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+}
+
+#registerBtn:hover {
+    background: #d00;
+}
+
+#registerBtn:active {
+    background: #f00;
+}
+
+/***************供应商注册*************/
+.gongying {
+    display: none;
+}
+
+.file-img {
+    width: 355px;
+    height: 30px;
+    position: absolute;
+    background: url(../img/icon-up.png) no-repeat;
+    top: 6px;
+    left: 125px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+}
+
+.file-img input {
+    width: 355px;
+    height: 30px;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.gongying > li > p {
+    color: #c00;
+    margin-top: 40px;
+}
+
+/*供应商注册 提交、取消按钮*/
+.gongying .btn {
+    float: left;
+    font-size: 20px;
+    display: inline-block;
+    width: 160px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 5px;
+    color: #fff;
+}
+
+/*供应商注册 提交*/
+.gongying .btnY {
+    background: #c00;
+}
+
+.btnY:hover {
+    background: #d00;
+}
+
+.btnY:active {
+    background: #f00;
+}
+
+/*供应商注册 取消*/
+.gongying .btnN {
+    margin-left: 35px;
+    background: #666;
+}
+
+.btnN:hover {
+    background: #999;
+}
+
+.btnN:active {
+    background: #ccc;
+}
