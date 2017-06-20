@@ -37,6 +37,7 @@
     background: #f00;
 }
 
+/*选中样式*/
 .register-left > .on {
     background: #c00;
 }
@@ -57,6 +58,10 @@
     margin-left: 20px;
     color: #fff;
     background: #c00;
+}
+
+.loginBtn:active {
+    background: #f00;
 }
 
 /***************************注册表单***************************/
