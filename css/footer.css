@@ -74,7 +74,7 @@ a:hover {
     background: #000;
 }
 
-.foot_b div {
+.foot_b > div {
     padding: 50px;
 }
 
