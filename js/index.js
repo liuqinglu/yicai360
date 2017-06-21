@@ -76,8 +76,8 @@ var autoPlay = function (boxID, ulID, childTag, olID) {
  */
 //鼠标移入显示
 $('.f1_style_item').hover(function () {
-    $(".f1_float_layer").css('display', 'block');
-    $('.f1_float_layer_c>h2').text($(this).find('a').text());
+    $(this).children(".f1_float_layer").css('display', 'block');
+    $(this).find("h2").text($(this).children('a').text());
 }, function () {
     $(".f1_float_layer").css('display', 'none');
 });
