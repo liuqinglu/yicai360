@@ -146,7 +146,7 @@ a:hover {
 .navitm-cats {
     float: left;
     height: 40px;
-    width: 160px;
+    width: 190px;
     background: #151515;
     color: #fff;
     font-size: 14px;
@@ -159,13 +159,13 @@ a:hover {
     display: inline-block;
     height: 40px;
     line-height: 40px;
-    width: 160px;
+    width: 190px;
     text-align: left;
 }
 
 .navitm-cats .lineicon {
     display: inline-block;
-    margin: 0 15px 0 27px;
+    margin: 0 15px 0 40px;
     width: 15px;
     height: 12px;
     overflow: hidden;
@@ -230,54 +230,58 @@ div.container {
 /**************第一部分 左侧商品分类导航**************/
 .f1_left {
     float: left;
-    width: 160px;
+    width: 190px;
     height: 574px;
-    background: #6cf;
+    /*background: #6cf;*/
     position: relative;
 }
 
 .f1_left > ul > li {
-    width: 150px;
+    width: 190px;
     height: 40px;
-    line-height: 20px;
-    padding-left: 10px;
     cursor: pointer;
     border-bottom: 1px solid #123;
     background: rgba(15, 15, 15, .8);
+    position: relative;
 }
 
 .f1_left > ul > li:hover {
-    width: 147px;
-    border-left: 3px solid #f00;
+    width: 185px;
+    border-left: 5px solid #f00;
     background: #666;
 }
 
 .f1_left > ul > li > a {
-    font-size: 14px;
+    display: block;
+    width: 150px;
+    height: 40px;
+    line-height: 38px;
+    margin-left: 40px;
+    font-size: 16px;
     color: #fff;
 }
 
-.f1_left > ul > li > .iconfont {
-    font-size: 36px;
-    position: relative;
-    top: 8px;
-    left: 0;
+.f1_left > ul > li > a > span {
+    position: absolute;
+    right: 20px;
+    color: #fff;
 }
 
-/*左侧浮动层*/
+/****************左侧浮动层***************/
 .f1_left > .f1_float_layer {
-    width: 780px;
+    display: none;
+    width: 750px;
     height: 574px;
     background: #fefefe;
     position: absolute;
     top: 0;
-    left: 160px;
+    left: 190px;
     box-shadow: 5px 3px 10px 3px #ddd;
     z-index: 990;
 }
 
 .f1_float_layer_c {
-    width: 740px;
+    width: 710px;
     height: 550px;
     /*background: #ecf;*/
     position: absolute;
@@ -318,14 +322,14 @@ div.container {
 /*中间轮播大图*/
 .f1_center {
     float: left;
-    width: 740px;
+    width: 710px;
     height: 550px;
     margin-top: 24px;
     margin-left: 20px;
 }
 
 .f1_center > .ct {
-    width: 740px;
+    width: 710px;
     height: 330px;
     position: relative;
 }
@@ -333,7 +337,7 @@ div.container {
 /*轮播大图*/
 /*wrap的轮播图和切换按钮样式*/
 .wrap {
-    width: 740px;
+    width: 710px;
     height: 330px;
     margin: 0 auto;
     overflow: hidden;
@@ -345,12 +349,12 @@ div.container {
 }
 
 .wrap ul li {
-    width: 740px;
+    width: 710px;
     height: 330px;
 }
 
 .wrap ul li a img {
-    width: 740px;
+    width: 710px;
     height: 330px;
 }
 
@@ -379,7 +383,7 @@ div.container {
 }
 
 .f1_center > .cb {
-    width: 740px;
+    width: 710px;
     height: 200px;
     margin-top: 20px;
 }
@@ -943,10 +947,6 @@ div.container {
 .right-menu > div:hover {
     color: #f30;
     background: #fff;
-}
-
-.right-menu > div:active {
-    background: #66ccff;
 }
 
 .right-menu > .gwc-box > i {
