@@ -1,0 +1,98 @@
+/*****************logo和搜索框部分*****************/
+.logo_search {
+    width: 100%;
+    height: 100px;
+    background: #f6f6f6;
+    border-bottom: 1px solid #c00;
+}
+
+.h60 {
+    height: 60px;
+    position: relative;
+    top: 10px;
+}
+
+/*logo*/
+.logo {
+    width: 200px;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.logo > a {
+    width: 200px;
+    height: 80px;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    z-index: 9;
+    background: url(../img/logo.png) no-repeat;
+}
+
+/*搜索框样式*/
+.search_box {
+    width: 720px;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    left: 300px;
+    z-index: 90;
+}
+
+.search_box input {
+    display: block;
+    width: 546px;
+    height: 36px;
+    outline: none;
+    border: 2px solid #c00;
+    padding: 0 10px;
+    position: absolute;
+    top: 18px;
+}
+
+/*搜索按钮*/
+.search_btn {
+    display: block;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+    background: #c00;
+    position: absolute;
+    top: 18px;
+    right: 0;
+}
+
+.search_btn:hover {
+    color: #fff;
+    background: #d00;
+}
+
+.search_btn:active {
+    color: #fff;
+    background: #f00;
+}
+
+/*搜索关键词*/
+.search_key_word {
+    position: absolute;
+    top: 66px;
+    left: 300px;
+}
+
+.search_key_word > ul > li {
+    float: left;
+    padding: 0 10px;
+    border-right: 1px solid #999;
+}
+
+/*页面主体内容*/
+.container {
+    height: 500px;
+}
