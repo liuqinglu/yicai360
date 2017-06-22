@@ -1,8 +1,11 @@
+body {
+    font-family: SimSun;
+}
+
 /*****************logo和搜索框部分*****************/
 .logo_search {
     width: 100%;
     height: 100px;
-    /*background: #f6f6f6;*/
     border-bottom: 1px solid #c00;
 }
 
@@ -59,7 +62,8 @@
     width: 150px;
     height: 40px;
     line-height: 40px;
-    font-size: 18px;
+    /*font-size: 18px;*/
+    font-size: 16px;
     font-weight: 600;
     text-align: center;
     color: #fff;
@@ -92,7 +96,174 @@
     border-right: 1px solid #999;
 }
 
-/*页面主体内容*/
+/***************页面主体内容******************/
 .container {
-    height: 500px;
+    /*height: 500px;*/
+    font-size: 14px;
 }
+
+.search_breadcrumb {
+    height: 30px;
+    line-height: 30px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.container > div {
+    height: 300px;
+    margin-bottom: 20px;
+}
+
+/*******面包屑导航*******/
+.search_breadcrumb_l {
+    float: left;
+    width: 500px;
+    height: 30px;
+}
+
+.search_widget_path > li {
+    font-size: 14px;
+    float: left;
+}
+
+.search_widget_path > li > i {
+    margin-left: 10px;
+}
+
+/******已选标签******/
+.search_widget_features > li {
+    float: left;
+    display: inline;
+    margin-left: 10px;
+}
+
+.search_widget_features > li > a {
+    padding: 0 10px;
+    color: #f60;
+    display: block;
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid #ecc;
+}
+
+.search_widget_features > li > a > span {
+    font-size: 16px;
+}
+
+/*已选标签 关闭按钮*/
+.search_widget_features > li > a > .close {
+    margin-left: 10px;
+}
+
+/*共找到X件 “XXX” 相关产品*/
+.search_breadcrumb_r {
+    float: right;
+    height: 30px;
+    color: #999;
+    font-size: 12px;
+    margin-right: 36px;
+}
+
+.search_breadcrumb_r > em {
+    font-style: normal;
+    color: #f30;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0 5px;
+}
+
+.search_breadcrumb_r > span {
+    color: #f60;
+    font-size: 16px;
+    margin: 0 5px;
+}
+
+/*筛选条件 品牌、规格、用途、功能*/
+.search_module {
+    position: relative;
+    z-index: 9;
+    height: 156px;
+    /*background: #6cf;*/
+    border: 1px solid #eee;
+    border-bottom: 0;
+}
+
+/*收起筛选按钮*/
+.search_widget_switch {
+    color: #999;
+    font-size: 24px;
+    width: 20px;
+    height: 20px;
+    line-height: 16px;
+    text-align: center;
+    border: 1px solid #999;
+    border-radius: 11px;
+    position: absolute;
+    top: -36px;
+    right: 0;
+    cursor: pointer;
+}
+
+/*品牌*/
+
+.widget_items_row {
+    position: relative;
+    padding-left: 20px;
+    padding-right: 10px;
+    border-bottom: solid 1px #eee;
+}
+
+.widget_items_title {
+    float: left;
+    display: inline;
+    width: 90px;
+    height: 18px;
+    line-height: 18px;
+    padding: 6px 0;
+    color: #888;
+}
+
+.widget_items_control {
+    float: right;
+    display: inline;
+    width: 150px;
+    height: 24px;
+    padding: 3px 0;
+}
+
+.widget_items {
+    margin: 0 150px 0 90px;
+}
+
+.widget_items > ul {
+    position: absolute;
+}
+
+.widget_items > ul > li {
+    float: left;
+    padding-top: 10px;
+    padding-right: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
