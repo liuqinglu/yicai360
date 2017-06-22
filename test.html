@@ -18,12 +18,37 @@
         }
 
         .box {
-            margin-top: 100px;
-            margin-left: 100px;
             position: relative;
-            width: 600px;
-            height: 310px;
+            width: 1400px;
             background: #eee;
+            border: 1px solid #333;
+            overflow: hidden;
+        }
+
+        .div1 {
+            float: left;
+            width: 100px;
+            height: 50px;
+            background: #ff0;
+        }
+
+        .div2 {
+            float: right;
+            width: 100px;
+            height: 150px;
+            background: #f0f;
+        }
+
+        .div2:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .div3 {
+            float: right;
+            width: 100px;
+            background: #00f;
         }
 
         ul {
@@ -39,72 +64,31 @@
             color: #fff;
             background: #333;
             margin-bottom: 1px;
+            float: left;
         }
 
-        li:hover {
-            color: #333;
-            background: #ccc;
-        }
-
-        a:hover {
-            color: #333;
-        }
-
-        .f1_float_layer {
-            display: none;
-            position: absolute;
-            left: 200px;
-            width: 300px;
-            height: 310px;
-            line-height: 100px;
-            text-align: center;
-            color: #333;
-            background: #ccc;
-            z-index: 99999;
-        }
-        span{
-            background: #6cf;
-        }
     </style>
 </head>
 <body>
 <div class="box">
-    <ul>
-        <li class="f1_style_item"><a href="#">000</a> <span>&gt;</span></li>
-        <li class="f1_style_item"><a href="#">111</a> <span>&gt;</span></li>
-        <li class="f1_style_item"><a href="#">222</a> <span>&gt;</span></li>
-        <li class="f1_style_item"><a href="#">333</a> <span>&gt;</span></li>
-        <li class="f1_style_item"><a href="#">444</a> <span>&gt;</span></li>
-        <li class="f1_style_item"><a href="#">555</a> <span>&gt;</span></li>
-        <li class="f1_style_item"><a href="#">666</a> <span>&gt;</span></li>
-        <li class="f1_style_item"><a href="#">777</a> <span>&gt;</span></li>
-        <li class="f1_style_item"><a href="#">888</a> <span>&gt;</span></li>
-        <li class="f1_style_item"><a href="#">999</a> <span>&gt;</span></li>
-    </ul>
-    <div class="f1_float_layer">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
+    <div class="div1">1</div>
+    <div class="div2">2</div>
+    <div class="div3">
+        <ul>
+            <li class="f1_style_item"><a href="#">000</a></li>
+            <li class="f1_style_item"><a href="#">111</a></li>
+            <li class="f1_style_item"><a href="#">222</a></li>
+            <li class="f1_style_item"><a href="#">333</a></li>
+            <li class="f1_style_item"><a href="#">444</a></li>
+            <li class="f1_style_item"><a href="#">555</a></li>
+            <li class="f1_style_item"><a href="#">666</a></li>
+            <li class="f1_style_item"><a href="#">777</a></li>
+            <li class="f1_style_item"><a href="#">888</a></li>
+            <li class="f1_style_item"><a href="#">999</a></li>
+            <li class="f1_style_item"><a href="#">101</a></li>
+            <li class="f1_style_item"><a href="#">111</a></li>
+        </ul>
     </div>
 </div>
-<script src="js/jquery-3.2.1.min.js"></script>
-<script>
-    $(function () {
-        var li = $('.f1_style_item');
-        var containerBox = $(".f1_float_layer");
-        li.mouseover(function () {
-            containerBox.css('display', 'block');
-            containerBox.find('span').text($(this).find('a').text());
-        });
-        containerBox.mouseout(function () {
-            containerBox.css('display', 'none');
-        });
-        /*$('.box').mouseout(function () {
-         containerBox.css('display', 'none');
-        });*/
-    });
-</script>
 </body>
 </html>
