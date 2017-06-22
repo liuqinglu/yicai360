@@ -225,6 +225,7 @@ body {
 
 .widget_items_control {
     float: right;
+    text-align: right;
     display: inline;
     width: 150px;
     height: 24px;
@@ -232,11 +233,11 @@ body {
 }
 
 .widget_items {
-    margin: 0 150px 0 90px;
+    margin: 0 150px 0 100px;
 }
 
 .widget_items > ul {
-    position: absolute;
+    overflow: hidden;
 }
 
 .widget_items > ul > li {
