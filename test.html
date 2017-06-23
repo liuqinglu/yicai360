@@ -1,89 +1,42 @@
-<!DOCTYPE html>
-<html lang="zh">
+<!doctype html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>材易采商城</title>
-    <style>
-        html, body, ul {
-            margin: 0;
-            padding: 0;
-            color: #333;
-            font-size: 12px;
-            list-style: none;
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>css绘制箭头</title>
+    <style type="text/css">
+        #triangle-facing-right {
+            display: inline-block;
+            margin: 72px;
+            border-left: 2px solid;
+            border-top: 2px solid;
+            width: 20px;
+            height: 20px;
+            transition: all .3s ease 0s;
         }
 
-        a {
-            color: #333;
-            text-decoration: none;
+        .deg45 {
+            transform: rotate(45deg);
         }
 
-        .box {
-            position: relative;
-            width: 1400px;
-            background: #eee;
-            border: 1px solid #333;
-            overflow: hidden;
+        .deg225 {
+            transform: rotate(225deg);
         }
-
-        .div1 {
-            float: left;
-            width: 100px;
-            height: 50px;
-            background: #ff0;
-        }
-
-        .div2 {
-            float: right;
-            width: 100px;
-            height: 150px;
-            background: #f0f;
-        }
-
-        .div2:after {
-            content: "";
-            display: block;
-            clear: both;
-        }
-
-        .div3 {
-            /*position: absolute;*/
-            width: 900px;
-            background: #ccc;
-            overflow: hidden;
-        }
-
-        li {
-            width: 200px;
-            height: 30px;
-            line-height: 30px;
-            text-align: center;
-            color: #333;
-            background: #666;
-            margin-bottom: 1px;
-            margin-right: 1px;
-            float: left;
-        }
-
     </style>
-</head>
 <body>
-<div class="box">
-    <!--<div class="div1">1</div>
-    <div class="div2">2</div>-->
-    <ul class="div3">
-        <li class="f1_style_item"><a href="#">000</a></li>
-        <li class="f1_style_item"><a href="#">111</a></li>
-        <li class="f1_style_item"><a href="#">222</a></li>
-        <li class="f1_style_item"><a href="#">333</a></li>
-        <li class="f1_style_item"><a href="#">444</a></li>
-        <li class="f1_style_item"><a href="#">555</a></li>
-        <li class="f1_style_item"><a href="#">666</a></li>
-        <li class="f1_style_item"><a href="#">777</a></li>
-        <li class="f1_style_item"><a href="#">888</a></li>
-        <li class="f1_style_item"><a href="#">999</a></li>
-        <li class="f1_style_item"><a href="#">101</a></li>
-        <li class="f1_style_item"><a href="#">111</a></li>
-    </ul>
+<div>
+    <a href="#">
+        <span>隐藏</span><i id="triangle-facing-right" class="deg45"></i>
+    </a>
 </div>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script>
+    $('a').click(function () {
+        var span = $(this).children('span');
+        span.text(span.text() === '隐藏' ? '更多' : '隐藏');
+        $(this).children('i').toggleClass('deg225');
+    });
+</script>
 </body>
 </html>
